@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/frame_with_white_background_r10_b0"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/tv_note_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1111"
+            android:textColor="@color/color_black"
+            android:textSize="8dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_note_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="2020-06-26"
+            android:textColor="@color/color_gray_dd"
+            android:textSize="7.5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_note_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="aaa"
+            android:textColor="@color/color_black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_note_last_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="2020-06-29"
+            android:textColor="@color/color_gray_bbb"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

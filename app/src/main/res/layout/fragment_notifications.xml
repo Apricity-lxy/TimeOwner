@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/user_avatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/user_no_avatar_text"
+            android:src="@mipmap/nouser"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp">
+
+
+            <TextView
+                android:id="@+id/user_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_name_text"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/user_signature"
+                android:layout_width="213dp"
+                android:layout_height="wrap_content"
+
+                android:maxLines="1"
+                android:text="@string/user_signature_text"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/usr_div_background"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/user_my_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@android:color/transparent"
+            android:drawableTop="@mipmap/tongji"
+            android:text="统计"
+            android:textColor="@color/black"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/user_suggestion"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/user_suggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@android:color/transparent"
+            android:drawableTop="@mipmap/naozhong"
+            android:text="锁机"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/user_my_doctor"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/usr_div_background"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <include
+            android:id="@+id/user_manual"
+            layout="@layout/view_user_list_node" />
+
+        <include layout="@layout/divider" />
+
+        <include
+            android:id="@+id/user_privacy"
+            layout="@layout/view_user_list_node" />
+
+        <include layout="@layout/divider" />
+
+        <include
+            android:id="@+id/user_protocol"
+            layout="@layout/view_user_list_node" />
+
+        <include layout="@layout/divider" />
+
+        <include
+            android:id="@+id/user_authors"
+            layout="@layout/view_user_list_node" />
+
+        <include layout="@layout/divider" />
+
+        <include
+            android:id="@+id/user_share"
+            layout="@layout/view_user_list_node" />
+
+    </LinearLayout>
+
+</LinearLayout>
